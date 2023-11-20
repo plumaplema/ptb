@@ -50,10 +50,10 @@ export default function Home() {
             Player
           </Text>
           <Text fontSize={"x-large"} fontWeight={"bold"}>
-            Tie
+            Banker
           </Text>
           <Text fontSize={"x-large"} fontWeight={"bold"}>
-            Banker
+            Tie
           </Text>
         </Flex>
         {Array.from({ length: 75 }).map((_, key) => {
