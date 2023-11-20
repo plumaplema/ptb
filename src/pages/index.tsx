@@ -46,9 +46,15 @@ export default function Home() {
         w={["100%", "70%", "50%"]}
       >
         <Flex justifyContent={"space-around"} w={"100%"}>
-          <Text>Player</Text>
-          <Text>Tie</Text>
-          <Text>Banker</Text>
+          <Text fontSize={"x-large"} fontWeight={"bold"}>
+            Player
+          </Text>
+          <Text fontSize={"x-large"} fontWeight={"bold"}>
+            Tie
+          </Text>
+          <Text fontSize={"x-large"} fontWeight={"bold"}>
+            Banker
+          </Text>
         </Flex>
         {Array.from({ length: 75 }).map((_, key) => {
           return (
@@ -89,9 +95,9 @@ const Row: React.FunctionComponent<RowProps> = ({ index, onChange }) => {
       value={value}
     >
       <Flex justifyContent={"space-around"} direction="row">
-        <Radio value="Player"></Radio>
-        <Radio value="Tie"></Radio>
-        <Radio value="Banker"></Radio>
+        <Radio size={"lg"} colorScheme="blue" value="Player"></Radio>
+        <Radio size={"lg"} colorScheme="red" value="Banker"></Radio>
+        <Radio size={"lg"} colorScheme="green" value="Tie"></Radio>
       </Flex>
     </RadioGroup>
   );
